@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Bienvenue sur le profil de {{ user.fullname }}{% endblock %}
+
+{% block breadcrumb %}
+    <li>
+        <a href="{{ path('profiles.index') }}">
+            <span class="icon is-small"><i class="fas fa-hashtag" aria-hidden="true"></i></span>
+            <span>Profils</span>
+        </a>
+    </li>
+    <li class="is-active">
+        <a href="#" aria-current="page">
+            <span class="icon is-small"><i class="fas fa-user"></i></span>
+            <span>Profil de @{{ user.username }}</span>
+        </a>
+    </li>
+{% endblock %}
+
+{% block body %}
+    <section class="hero is-medium is-link" style="background-image: url('{{ user.coverPicture }}'); background-size: cover; background-position: center center;">
+        <div class="hero-body">
+            <div class="columns is-align-items-center">
+                <div class="column is-one-fifth">
+                    <figure class="image is-square">
+                        <img src="{{ user.avatarPicture }}" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="column is-two-thirds">
+                    <p class="title">
+                        {{ user.fullname }}
+                        <small>
+                            @{{ user.username }}
+                        </small>
+                    </p>
+                    <p class="subtitle">
+                        {{ user.description }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
