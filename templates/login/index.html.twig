@@ -13,18 +13,27 @@
                 </article>
             {% endif %}
 
+
+            <div class="has-text-centered mb-5">
+                <figure class="image is-inline-block is-128x128">
+                    <img src="https://openmoji.org/data/color/svg/1F54A.svg">
+                </figure>
+                <h1 class="title">Bienvenue sur <span class="has-text-link">Zozio Inc.</span> !</h1>
+                <h2 class="subtitle mt-1 is-italic"># TODO : Penser à mettre une super phrase d'accroche ici</h2>
+            </div>
+
             <form action="{{ path('login') }}" method="post">
                 <div class="field">
-                    <label for="username">Identifiant :</label>
+                    <label class="label" for="username">Identifiant :</label>
                     <div class="control">
-                        <input type="text" class="input" id="username" name="_username" value="{{ last_username }}"/>
+                        <input type="text" class="input" id="username" name="_username" value="{{ last_username ?: 'sophiaw' }}"/>
                     </div>
                 </div>
 
                 <div class="field">
-                    <label for="password">Mot de passe :</label>
+                    <label class="label" for="password">Mot de passe :</label>
                     <div class="control">
-                        <input type="password" class="input" id="password" name="_password"/>
+                        <input type="password" class="input" id="password" name="_password" value="password"/>
                     </div>
                 </div>
 
