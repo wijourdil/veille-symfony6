@@ -40,6 +40,22 @@ class AppFixtures extends Fixture
                 'avatar' => 'https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesarSidePart&accessoriesType=Blank&hairColor=PastelPink&facialHairType=BeardLight&facialHairColor=Black&clotheType=BlazerShirt&eyeType=Side&eyebrowType=Default&mouthType=Default&skinColor=Black',
                 'password' => 'password',
             ],
+            [
+                'fullname' => 'Margot Roby II',
+                'username' => 'm.roby2',
+                'description' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                'cover' => 'https://placekitten.com/1499/500',
+                'avatar' => 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairCurvy&accessoriesType=Blank&hairColor=Platinum&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=PastelBlue&eyeType=Surprised&eyebrowType=RaisedExcitedNatural&mouthType=Tongue&skinColor=Black',
+                'password' => 'password',
+            ],
+            [
+                'fullname' => 'Jean Somon',
+                'username' => 'jeanlepoisson',
+                'description' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                'cover' => 'https://placekitten.com/1499/501',
+                'avatar' => 'https://avataaars.io/?avatarStyle=Circle&topType=ShortHairSides&accessoriesType=Blank&hairColor=Platinum&facialHairType=Blank&clotheType=Overall&clotheColor=White&eyeType=Squint&eyebrowType=RaisedExcitedNatural&mouthType=ScreamOpen&skinColor=Brown',
+                'password' => 'password',
+            ],
         ];
 
         foreach ($userData as $datum) {
